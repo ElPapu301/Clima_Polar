@@ -1,0 +1,205 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: white;
+    padding: 15px;
+    text-align: left;
+    display: block;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+.sidebar .logout-btn {
+    position: absolute;
+    bottom: 20px;
+    width: 88%;
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Buttons and forms */
+.btn-editar, .btn-eliminar, .btn-registrar, .eliminar {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-registrar {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.eliminar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.form-registrar-container, .form-editar-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.alert {
+    background-color: #f39c12;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-top: 0;
+}
+.descripcion-textarea {
+    width: 100%;
+    height: 150px;  /* Ajusta la altura según sea necesario */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+    resize: vertical;  /* Permite cambiar el tamaño de la caja de texto solo verticalmente */
+    box-sizing: border-box;  /* Asegura que el padding se incluya en el ancho y alto del textarea */
+}
+
+.descripcion-textarea:focus {
+    border-color: #3498db;  /* Cambia el borde cuando está enfocado */
+    outline: none;  /* Elimina el contorno predeterminado */
+    background-color: #f9f9f9;  /* Color de fondo ligeramente más claro cuando se enfoca */
+}
+button[name="guardar_cambios"] {
+    background-color: #4CAF50;     /* Color de fondo verde */
+    color: white;                  /* Texto blanco */
+    border: none;                  /* Sin borde */
+    padding: 10px 20px;            /* Relleno en el botón */
+    font-size: 16px;               /* Tamaño de la fuente */
+    cursor: pointer;              /* Cambia el cursor cuando pasa por encima */
+    border-radius: 5px;            /* Bordes redondeados */
+    display: inline-flex;          /* Alineación de texto e ícono en una línea */
+    align-items: center;           /* Alinea el ícono y el texto verticalmente */
+    gap: 8px;                      /* Espacio entre el ícono y el texto */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+button[name="guardar_cambios"]:hover {
+    background-color: #45a049;     /* Color de fondo cuando el ratón pasa por encima */
+}
+
+button[name="guardar_cambios"] i {
+    font-size: 18px;               /* Tamaño del ícono */
+}
+/* Estilo del campo de archivo */
+input[type="file"] {
+    display: none;                /* Oculta el campo de entrada original */
+}
+
+/* Estilo personalizado para el botón de carga de archivo */
+.input-file-btn {
+    background-color: #007BFF;     /* Fondo azul */
+    color: white;                  /* Texto blanco */
+    padding: 10px 20px;            /* Relleno alrededor del texto */
+    border-radius: 5px;            /* Bordes redondeados */
+    font-size: 16px;               /* Tamaño de fuente */
+    cursor: pointer;              /* Cambia el cursor cuando pasa por encima */
+    display: inline-flex;          /* Alinea el texto y el ícono */
+    align-items: center;           /* Alinea el ícono y el texto verticalmente */
+    gap: 8px;                      /* Espacio entre el texto y el ícono */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+
+/* Cambio de color al pasar el ratón */
+.input-file-btn:hover {
+    background-color: #0056b3;     /* Fondo más oscuro cuando el ratón pasa por encima */
+}
+
+/* Estilo del texto */
+.input-file-btn span {
+    font-size: 14px;               /* Tamaño de la fuente */
+}
+
+/* Estilo del ícono */
+.input-file-btn i {
+    font-size: 18px;               /* Tamaño del ícono */
+}

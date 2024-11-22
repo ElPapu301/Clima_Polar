@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo y título */
+.login-container img.logo {
+    display: block; /* Asegura que el logo se trate como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 80%; /* Cambia a un porcentaje para que sea más flexible */
+    max-width: 200px; /* Tamaño máximo, ajusta según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* Campos de formulario */
+.login-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-top: 10px;
+
+}
+
+/* Personalización de select */
+.login-container select {
+    appearance: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.login-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enlace */
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para pantallas menores a 576px */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px; /* Reduce el padding */
+        width: 90%; /* Aumenta el ancho del contenedor */
+    }
+
+    .login-container h2 {
+        font-size: 1.5em; /* Reduce el tamaño de fuente del título */
+    }
+
+    button {
+        padding: 10px; /* Reduce el padding del botón */
+        font-size: 0.9em; /* Ajusta el tamaño de fuente del botón */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px; /* Ajusta el padding de los campos */
+        font-size: 0.9em; /* Ajusta el tamaño de fuente de los campos */
+    }
+}
+
+/* Media query para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%; /* Aumenta el ancho del contenedor */
+    }
+
+    .login-container h2 {
+        font-size: 1.7em; /* Tamaño de fuente ligeramente mayor */
+    }
+}
